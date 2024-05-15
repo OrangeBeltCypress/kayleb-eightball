@@ -1,0 +1,28 @@
+.ball{
+    animation-name: "tilt-shaking"; 
+    animation-duration: 4s;
+  }
+
+  .text{
+    position:absolute;
+    width:14%;
+    top:50%;
+    left:25%;
+    margin-top:-60px;
+    margin-left:-65px;
+    font: 16px 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #222;
+    text-transform: uppercase;
+    text-align: center;
+    visibility:hidden;
+  
+  }
+
+  @keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
